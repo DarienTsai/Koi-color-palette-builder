@@ -48,7 +48,7 @@ $groupsWidth: 22%;
 
 #remove-group{
   width: $groupsWidth;
-  background-image: url(/png/clear.png);
+  background-image: url(https://raw.githubusercontent.com/DarienTsai/Koi-color-palette-builder/master/public/png/clear.png);
   background-position: center;
   background-size: 23px 23px;
   background-repeat: no-repeat;
@@ -56,7 +56,7 @@ $groupsWidth: 22%;
 
 #remove-color{
   width: 100% - $groupsWidth;
-  background-image: url(/png/delete.png);
+  background-image: url(https://raw.githubusercontent.com/DarienTsai/Koi-color-palette-builder/master/public/png/delete.png);
   background-position: center;
   background-size: 20px 20px;
   background-repeat: no-repeat;

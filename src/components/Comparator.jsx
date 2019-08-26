@@ -19,7 +19,7 @@ class Comparator extends Component{
         </div>
 
         <div id="comparator-selected" className="color-display">
-          <div id="selected-color" className="color-block" style={{background: this.props.compare === "None" ? "url(png/transparentBG.png)" : this.props.compare}}></div>
+          <div id="selected-color" className="color-block" style={{background: this.props.compare === "None" ? "url(https://raw.githubusercontent.com/DarienTsai/Koi-color-palette-builder/master/public/png/transparentBg.png)" : this.props.compare}}></div>
           <p id="selected-hex" className="color-value">{this.props.compare === "None" ? "No Selection" : this.props.compare}</p>
         </div>
 
