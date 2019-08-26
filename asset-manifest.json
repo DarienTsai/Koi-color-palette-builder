@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Koi-color-palette-builder/index.html/static/css/main.c87f39e8.chunk.css",
-    "main.js": "/Koi-color-palette-builder/index.html/static/js/main.e995c14c.chunk.js",
-    "main.js.map": "/Koi-color-palette-builder/index.html/static/js/main.e995c14c.chunk.js.map",
-    "runtime~main.js": "/Koi-color-palette-builder/index.html/static/js/runtime~main.44e298ad.js",
-    "runtime~main.js.map": "/Koi-color-palette-builder/index.html/static/js/runtime~main.44e298ad.js.map",
-    "static/js/2.25899fee.chunk.js": "/Koi-color-palette-builder/index.html/static/js/2.25899fee.chunk.js",
-    "static/js/2.25899fee.chunk.js.map": "/Koi-color-palette-builder/index.html/static/js/2.25899fee.chunk.js.map",
-    "index.html": "/Koi-color-palette-builder/index.html/index.html",
-    "precache-manifest.149e7ed22ed60e629744f7a68f9e5e13.js": "/Koi-color-palette-builder/index.html/precache-manifest.149e7ed22ed60e629744f7a68f9e5e13.js",
-    "service-worker.js": "/Koi-color-palette-builder/index.html/service-worker.js",
-    "static/css/main.c87f39e8.chunk.css.map": "/Koi-color-palette-builder/index.html/static/css/main.c87f39e8.chunk.css.map"
+    "main.css": "/Koi-color-palette-builder/static/css/main.c87f39e8.chunk.css",
+    "main.js": "/Koi-color-palette-builder/static/js/main.e995c14c.chunk.js",
+    "main.js.map": "/Koi-color-palette-builder/static/js/main.e995c14c.chunk.js.map",
+    "runtime~main.js": "/Koi-color-palette-builder/static/js/runtime~main.e0454ebf.js",
+    "runtime~main.js.map": "/Koi-color-palette-builder/static/js/runtime~main.e0454ebf.js.map",
+    "static/js/2.25899fee.chunk.js": "/Koi-color-palette-builder/static/js/2.25899fee.chunk.js",
+    "static/js/2.25899fee.chunk.js.map": "/Koi-color-palette-builder/static/js/2.25899fee.chunk.js.map",
+    "index.html": "/Koi-color-palette-builder/index.html",
+    "precache-manifest.3f3517a35c116525fa542a642c115f11.js": "/Koi-color-palette-builder/precache-manifest.3f3517a35c116525fa542a642c115f11.js",
+    "service-worker.js": "/Koi-color-palette-builder/service-worker.js",
+    "static/css/main.c87f39e8.chunk.css.map": "/Koi-color-palette-builder/static/css/main.c87f39e8.chunk.css.map"
   }
 }
