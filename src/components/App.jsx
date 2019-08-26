@@ -441,7 +441,7 @@ class App extends Component{
 
   share = () => {
     const data = "#" + this.paletteString();
-    this.setState({link: 'index.html' + data});
+    this.setState({link: 'https://darientsai.github.io/Koi-color-palette-builder/index.html' + data});
     ReactDOM.findDOMNode(document.getElementById('sharePalette')).className = "";
   }
 

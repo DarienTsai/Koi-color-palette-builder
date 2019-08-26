@@ -24,7 +24,7 @@ class SelectionInfo extends Component{
     </div>
 
     <div id="current-color">
-      <div id="current-color-display" style={{background: this.props.current.colors[this.props.color].value === "None" ? "url(png/transparentBG.png)" : this.props.current.colors[this.props.color].value}}></div>
+      <div id="current-color-display" style={{background: this.props.current.colors[this.props.color].value === "None" ? "url(/png/transparentBG.png)" : this.props.current.colors[this.props.color].value}}></div>
       <p id="current-color-name">{this.props.current.colors[this.props.color].value === "None" ? "New Color" : find(this.props.current.colors[this.props.color].value)}</p>
       <p id="current-color-hex">{this.props.current.colors[this.props.color].value}</p>
       <input type="text" id="color-notes" className="info-field" placeholder="Notes"></input>
