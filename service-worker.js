@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Koi-color-palette-builder/precache-manifest.39b2811216257e6053377a63d46fd4b2.js"
+  "/Koi-color-palette-builder/precache-manifest.23a10c441b89e79829821c759831fa6d.js"
 );
 
 self.addEventListener('message', (event) => {
