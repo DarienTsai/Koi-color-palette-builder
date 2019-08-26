@@ -1,0 +1,110 @@
+/*
+ * Author: Darien Tsai
+ * Date: 8-23-19
+ * All Styles going into export render
+*/
+
+body{
+  width: 100vw;
+  height: 100vh;
+  color: rgb(61, 61, 61);
+}
+
+body div.off{
+  display: none;
+}
+
+#paging{
+  width: 8.5in;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 0.1%;
+}
+
+/*Header styles*/
+#header{
+  width: 90%;
+  height: fit-content;
+  margin: auto;
+  text-align: left;
+  flex-wrap: nowrap;
+  border-bottom: 2px solid rgb(82, 82, 82);
+  line-height: 1.5;
+  padding: 1%;
+}
+
+#header .title{
+  font-size: 20pt;
+}
+
+#header .author{
+  font-size: 11pt;
+}
+
+/*Group Styles*/
+.group{
+  text-align: center;
+  margin-top: 7%;
+}
+
+.heading{
+  width: 50%;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 0.5%;
+  margin: auto;
+}
+
+.desc{
+  width: fit-content;
+  margin: auto;
+}
+
+table{
+  margin: auto;
+  margin-top: 3%;
+  width: 90%;
+  border-collapse: collapse;
+}
+
+td{
+  padding: 1%;
+  border: none;
+  margin: 0;
+}
+
+td:nth-child(1){
+  width: 20%;
+  text-align: right;
+}
+
+td:nth-child(2){
+  width: 7%;
+}
+
+td:nth-child(3){
+  width: 13%;
+}
+
+td:nth-child(4){
+  width: 60%;
+  text-align: left;
+}
+
+/*Print*/
+.print{
+  display: block;
+  margin: 3% auto;
+  padding: 1%;
+  font-size: 1.2em;
+  background-color: rgb(231, 231, 231);
+  border: none;
+  outline: none;
+  transition-duration: 0.2s;
+  color: rgb(43, 43, 43);
+}
+
+.print:hover{
+  background-color: rgb(207, 207, 207);
+  color: rgb(63, 63, 63);
+}

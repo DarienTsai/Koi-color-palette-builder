@@ -1,0 +1,36 @@
+/*
+ * Author: Darien Tsai
+ * Date: 8-23-19
+ * All defaults for non application pages
+*/
+
+::selection {background: #b2e4f0;}
+
+::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: rgba(245, 245, 245, 0);
+  
+}
+
+::-webkit-scrollbar{
+  width: 3px;
+  height: 3px;
+  background-color: rgb(1, 26, 29);
+  
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #849796;
+  border-radius: 10px;
+}
+
+*{
+ margin: 0;
+ padding: 0;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+}

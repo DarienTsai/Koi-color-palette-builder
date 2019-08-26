@@ -1,0 +1,272 @@
+/*
+ * Author: Darien Tsai
+ * Date: 8-24-19
+ * Landing page styles :D
+*/
+
+:root{
+  height: 100%;
+}
+
+body{
+  background-color: #1f1e1e;
+  overflow-x: hidden;
+  color: rgb(182, 182, 182);
+}
+
+/*nav*/
+
+nav, header, section, footer{
+  width: 100%;
+}
+
+nav{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: fit-content;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgb(22, 22, 22));
+}
+
+nav img{
+  max-height: 35px;
+  transition-duration: 0.3s;
+}
+
+nav img:hover{
+  transform: rotate(20deg);
+}
+
+.nav-side{
+  width: 7%;
+  height: 100%;
+  padding: 0.8%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.nav-link{
+  font-size: 1.1em;
+  color: rgb(182, 182, 182);
+  padding: 0 10%;
+  width: fit-content;
+  height: fit-content;
+  line-height: 2;
+  text-decoration: none;
+  text-align: center;
+  height: 100%;
+  display: block;
+}
+
+.nav-link:hover{
+  color: rgb(236, 236, 236);
+}
+
+/*header*/
+
+header{
+  height: 90vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0));
+  display: flex;
+  justify-content: space-around;
+}
+
+header div{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#head-img{
+  align-items: flex-end;
+  overflow-y: hidden;
+}
+
+#head-text{
+  align-items: center;
+  flex-direction: column;
+}
+
+header img{
+  display: block;
+  max-width: 90%;
+  box-shadow: 0 0 60px 5px rgb(0, 0, 0);
+}
+
+header h1{
+  font-size: 15em;
+}
+
+header p{
+  font-size: 3em;
+}
+
+/*intro*/
+
+#intro{
+  height: fit-content;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url('/png/workspace.png');
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+#intro-img{
+  width: 35%;
+  height: 100%;
+}
+
+#intro-text{
+  width: 65%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#intro h1{
+  font-size: 9em;
+  padding: 5% 0;
+}
+
+#intro p{
+  font-size: 2em;
+  padding: 5% 0;
+}
+
+/*features*/
+
+#features{
+  height: fit-content;
+  padding: 3% 0;
+  background-color: #050505;
+  width: 100%;
+  margin: auto;
+}
+
+#feature-cards{
+  width: 80%;
+  padding: 3% 0;
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+figure{
+  padding: 2%;
+  border-radius: 3px;
+  width: 15%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 3px solid rgb(28, 86, 99);
+  border-top: 3px solid rgb(32, 149, 179);
+  border-left: 3px solid rgb(32, 149, 179);
+  border-right: 3px solid rgb(28, 86, 99);
+}
+
+figure img{
+  padding: 15% 0;
+  width: 7vw;
+  height: 7vw;
+}
+
+figcaption{
+  padding: 10% 0;
+  font-size: 1.7em;
+  text-align: center;
+}
+
+#feature-underlines{
+  width: 90%;
+  padding: 20px 0;
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.feature-underline{
+  height: 1px;
+  border-radius: 5px;
+  background-color: rgb(0, 204, 255);
+}
+
+.side{
+  width: 15%;
+}
+
+.center{
+  width: 50%;
+}
+
+/*action*/
+
+#action{
+  width: 100%;
+  padding: 2% 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+#action-text{
+  width: 45%;
+  height: 100%;
+}
+
+#action-img{
+  width: 35%;
+  height: 100%;
+}
+
+#action img{
+  display: block;
+  max-width: 80%;
+  float: left;
+}
+
+#action h3{
+  font-size: 5em;
+}
+
+#action a{
+  padding: 2.3%;
+  cursor: pointer;
+  background-color: #448b8f;
+  display: block;
+  text-decoration: none;
+  color: rgb(182, 182, 182);
+  font-size: 1.5em;
+  width: fit-content;
+  border-radius: 3px;
+  margin: 15% auto 3%;
+  box-shadow: 0 0 20px 7px rgb(20, 20, 20);
+}
+
+#action a:hover{
+  color: rgb(206, 206, 206);
+  box-shadow: 0 0 35px 10px rgb(20, 20, 20);
+}
+
+/*footer*/
+
+footer{
+  background-color: rgb(0, 0, 0);
+  padding: 2% 0;
+  text-align: center;
+}
