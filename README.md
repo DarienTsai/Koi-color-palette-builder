@@ -20,6 +20,7 @@ I made this app to try out ReactJS and Sass. Hope its useful!
 
 |Citation      | Use                  |
 |--------------|----------------------|
+|NodeJS        | Modules, Packages    |
 |ReactJS       | Front End UI Library |
 |Babel         | ES6, JSX Transpiler  |
 |Sass          | CSS Preprocessor     |
