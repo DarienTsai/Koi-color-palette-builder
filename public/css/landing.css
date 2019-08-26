@@ -112,7 +112,7 @@ header p{
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
-  background-image: url('/png/workspace.png');
+  background-image: url("../png/workspace.png");
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
@@ -269,4 +269,10 @@ footer{
   background-color: rgb(0, 0, 0);
   padding: 2% 0;
   text-align: center;
+}
+
+footer img{
+  display: block;
+  margin: auto;
+  padding: 1% 0;
 }
