@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Koi-color-palette-builder/static/css/main.c87f39e8.chunk.css",
-    "main.js": "/Koi-color-palette-builder/static/js/main.5d50030b.chunk.js",
-    "main.js.map": "/Koi-color-palette-builder/static/js/main.5d50030b.chunk.js.map",
+    "main.js": "/Koi-color-palette-builder/static/js/main.c9eb2604.chunk.js",
+    "main.js.map": "/Koi-color-palette-builder/static/js/main.c9eb2604.chunk.js.map",
     "runtime~main.js": "/Koi-color-palette-builder/static/js/runtime~main.e0454ebf.js",
     "runtime~main.js.map": "/Koi-color-palette-builder/static/js/runtime~main.e0454ebf.js.map",
     "static/js/2.25899fee.chunk.js": "/Koi-color-palette-builder/static/js/2.25899fee.chunk.js",
     "static/js/2.25899fee.chunk.js.map": "/Koi-color-palette-builder/static/js/2.25899fee.chunk.js.map",
     "index.html": "/Koi-color-palette-builder/index.html",
-    "precache-manifest.66fa1dca673cfbe9c289cce8698beb3a.js": "/Koi-color-palette-builder/precache-manifest.66fa1dca673cfbe9c289cce8698beb3a.js",
+    "precache-manifest.6d771bcaa60ee8f5e75890a800d944f2.js": "/Koi-color-palette-builder/precache-manifest.6d771bcaa60ee8f5e75890a800d944f2.js",
     "service-worker.js": "/Koi-color-palette-builder/service-worker.js",
     "static/css/main.c87f39e8.chunk.css.map": "/Koi-color-palette-builder/static/css/main.c87f39e8.chunk.css.map"
   }
