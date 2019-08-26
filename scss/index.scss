@@ -1,0 +1,51 @@
+/*
+ * Author: Darien Tsai
+ * Date: 8-7-19
+ * All Styles going into Koi index
+ */
+
+//Values
+@import 'colors';
+@import 'defaults';
+@import 'animations';
+
+#root{
+  @extend %commonFlexing;
+  @extend %fullDims;
+  background-color: $totalBg;
+}
+
+.sidebar{
+  @extend %commonFlexing;
+  background-color: $sidebarBg;
+  width: 18%;
+  height: 100%;
+  z-index: 5;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#center-module{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 64%;
+  height: 100%;
+}
+
+/*Left Sidebar*/
+@import 'leftHeader';
+@import 'palette';
+
+/*Center*/
+@import 'picker';
+@import 'options';
+
+/*Right Sidebar*/
+@import 'comparator';
+@import 'information';
+@import 'produce';
+
+/*Share*/
+@import 'share';

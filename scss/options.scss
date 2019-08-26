@@ -1,0 +1,42 @@
+/*Options layout and styles [Darien Tsai, 8-7-19]*/
+
+#options{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 90%;
+  height: 10%;
+  margin: auto;
+  z-index: 2;
+
+  button{
+    height: 75%;
+    padding: 0 3em;
+    color: $uiText;
+    background-color: $sidebarBg;
+    font-size: 0.6em;
+    margin: 0 0.2em;
+    border: none;
+    border-top: 1px solid $sectionDivider;
+  }
+
+  button:active{
+    box-shadow: 0 0 25px 10px $optionButtonShadow inset;
+    transition-duration: 0s;
+    border-top: 1px solid $focusFieldLine;
+  }
+}
+
+#options div{
+  @extend %commonFlexing;
+  align-items: flex-end;
+  width: fit-content;
+  height: 50%;
+  padding: 0 5%;
+}
+
+#options .control button{
+  height: 90%;
+  border-top: 1px solid $focusFieldLine;
+}

@@ -1,0 +1,25 @@
+/*
+ * Author: Darien Tsai
+ * Date: 8-23-19
+ * print styles
+*/
+
+@media print{
+  *{
+    color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .print{
+    display: none;
+  }
+
+  .group{
+    break-inside: avoid;
+  }
+
+  #foot{
+    break-before: avoid;
+    page-break-before: avoid;
+  }
+}

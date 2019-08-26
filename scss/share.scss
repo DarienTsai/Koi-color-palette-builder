@@ -1,0 +1,68 @@
+/*Share Window Styles [Darien Tsai, Date: 8-23-19]*/
+
+@import 'colors';
+@import 'defaults';
+@import 'animations';
+
+#sharePalette{
+  @extend %commonFlexing;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  background-color: $popBg;
+}
+
+#sharePalette.hidden{
+  display: none;
+}
+
+
+#popup{
+  @extend %commonFlexing;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+  height: 30vh;
+  padding: 2%;
+  background-color: $sidebarBg;
+  box-shadow: -3px 3px 15px 1px $popShadow;
+}
+
+#popup p{
+  font-size: 3.5em;
+  text-align: center;
+  padding: 1%;
+  margin: auto;
+  width: filter;
+  color: $uiText;
+}
+
+#linkGen{
+  @extend %commonFlexing;
+  padding: 1%;
+  user-select: all;
+  width: 100%;
+  height: fit-content;
+}
+
+#link{
+  width: 75%;
+  color: $uiText;
+}
+
+#copyBtn{
+  color: $uiText;
+  font-size: 0.9em;
+  display: block;
+  width: 25%;
+  height: 100%;
+  padding: 2%;
+}
+
+#copyBtn:hover{
+  background-color: $copyHover;
+}

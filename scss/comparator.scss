@@ -1,0 +1,28 @@
+/*Comparator styles [Darien Tsai, 8-9-19]*/
+
+#comparator{
+  @extend %commonFlexing;
+  width: 100%;
+  height: 25%;
+  color: $uiText;
+}
+
+.color-display{
+  width: 50%;
+  height: 100%;
+}
+
+.color-block{
+  background-color: black;
+  width: 100%;
+  height: 80%;
+}
+
+.color-value{
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 3;
+  user-select: all;
+}

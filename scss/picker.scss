@@ -1,0 +1,67 @@
+/*Picker layout and React Color Overiding [Darien Tsai, 8-7-19]*/
+
+/*Picker styles*/
+
+#center{
+  width: 100%;
+  height: 90%;
+}
+
+#picker{
+  @extend %commonFlexing;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+#name-centering{
+  @extend %commonFlexing;
+  align-items: center;
+  width: 90%;
+  z-index: 0;
+  position: absolute;
+  bottom: 4.5em;
+  left: 5%;
+}
+
+#picker-color-name{
+  color: $transparent;
+  background: linear-gradient($colorFade, $colorName);
+  background-clip: text;
+  text-align: center;
+  font-size: 9em;
+  white-space: nowrap;
+}
+
+/*Hard overriding*/
+
+.chrome-picker{
+  height: fit-content;
+  z-index: 1;
+}
+
+div.flexbox-fix:first-child{
+  opacity: 1;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  padding: 1.5% 0 0;
+  background-color: $transparent;
+}
+
+
+.flexbox-fix{
+  input{
+    padding: 1% 0;
+    color: $uiText;
+  }
+  input:focus{
+    padding: 1% 0;
+  }
+  svg{
+    transition-duration: 0.1s;
+  }
+}

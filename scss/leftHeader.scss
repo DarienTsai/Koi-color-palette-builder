@@ -1,0 +1,60 @@
+/*Left bar header component styles [Darien Tsai, 8-8-19]*/
+
+#left-bar-header{
+  @extend %commonFlexing;
+  width: 95%;
+  height: 12%;
+  margin: auto;
+  border-bottom: 2px solid $sectionDivider;
+}
+
+#header-logo{
+  @extend %commonFlexing;
+  align-items: center;
+  width: 25%;
+
+  object{
+    width: 100%;
+    transition-duration: 0.2s;
+  }
+
+  object:hover{
+    transform: rotate(10deg);
+  }
+
+  #Full{
+    fill: $numContainerBg;
+  }
+}
+
+#session-details{
+  @extend %commonFlexing;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  box-sizing: border-box;
+  padding: 2%;
+
+}
+
+#session{
+  color: $leftHeadSessionTextColor;
+  font-size: 1.8em;
+  width: 85%;
+}
+
+#credit{
+  @extend %commonFlexing;
+  width: 80%;
+  color: $leftHeadAuthorTextColor;
+  font-size: 0.8em;
+}
+
+#by{
+  padding: 1.5% 0;
+  width: 15%;
+}
+#author{
+  color: inherit;
+  width: 85%;
+}

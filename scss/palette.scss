@@ -1,0 +1,195 @@
+/*Palette component styles [Darien Tsai, 8-7-19*/
+
+ #palette{
+  @extend %commonFlexing;
+  flex-direction: column;
+  height: 88%;
+}
+
+$listHeight: 95%;
+
+#lists{
+  @extend %commonFlexing;
+  width: 100%;
+  height: $listHeight;
+}
+
+#removal{
+  @extend %commonFlexing;
+  width: 100%;
+  height: 100% - $listHeight;
+}
+
+$groupsWidth: 22%;
+
+#color-groups-bar{
+  @extend %commonFlexing;
+  flex-direction: column;
+  align-items: center;
+  width: $groupsWidth;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 3% 0;
+  overflow-y: auto;
+}
+
+#colors-bar{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100% - $groupsWidth;
+  background-image: linear-gradient(90deg, $differenceBg, $sidebarBg);
+  background-color: $sidebarBg;
+  box-sizing: border-box;
+  padding: 3% 0;
+  overflow-y: auto;
+  overflow-x: visible;
+}
+
+#remove-group{
+  width: $groupsWidth;
+  background-image: url(/png/clear.png);
+  background-position: center;
+  background-size: 23px 23px;
+  background-repeat: no-repeat;
+}
+
+#remove-color{
+  width: 100% - $groupsWidth;
+  background-image: url(/png/delete.png);
+  background-position: center;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+
+#remove-group:active, #remove-color:active{
+  border-left: 2px solid $removeButtonActive;
+  border-right: 2px solid $removeButtonActive;
+  box-shadow: 0 0 25px 10px $removeButtonShadow inset;
+  transition-duration: 0s;
+}
+
+#remove-group:hover, #remove-color:hover{
+  background-color: $removeButtonHover;
+}
+
+//Color Groups
+#color-groups-bar div{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#color-groups-bar svg{
+  display: block;
+  margin: auto;
+  transition-duration: 0.2s;
+}
+
+.e svg{
+  fill: $ghostGroup;
+  transform: scale(0.5);
+}
+
+.g{
+  fill: $filledGroup;
+}
+
+.g svg{
+  transition-duration: 0.2s;
+}
+
+#color-groups-bar svg:hover{
+  transform: rotate(20deg) scale(1.1);
+  cursor: pointer;
+}
+
+.g::after{
+  content: "";
+  width: fit-content;
+  opacity: 0;
+  color: $uiText;
+  padding: 0.5em;
+  border-radius: 7px;
+  background-color: $groupPseudoBg;
+  position: absolute;
+  transform: translate(3em, -2.6em);
+  white-space: nowrap;
+  z-index: 2;
+  transition-duration: 0s;
+}
+
+.g:hover::after{
+  content: attr(name);
+  opacity: 1;
+  transform: translate(5em, -2.6em);
+  transition-duration: 0.3s;
+}
+
+.g::before{
+  content: "";
+  width: 1em;
+  height: 1em;
+  opacity: 0;
+  background-color: $groupPseudoBg;
+  position: absolute;
+  transform: translate(4.2em, 1em) rotate(45deg);
+  z-index: 1;
+  transition-duration: 0s;
+}
+
+.g:hover::before{
+  opacity: 1;
+  transform: translate(4.7em, 1em) rotate(45deg);
+  transition-duration: 0.1s;
+}
+
+//Colors
+.c{
+  @extend %commonFlexing;
+  width: 90%;
+  background: linear-gradient(90deg, $sidebarBg, $colorBg);
+  border-radius: 0 1em 1em 0;
+  margin: 0.2em 0;
+  box-sizing: border-box;
+  padding: 1em 0;
+  border-right: 2px solid $colorBorder;
+  transition-duration: 0.1s;
+}
+
+.c:hover, #colors-bar .active{width: 98%;}
+
+#colors-bar .active{border-right: 5px solid $colorBorderActive;}
+
+.c-display-container{
+  @extend %commonFlexing;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+}
+
+.c-display{
+  width: 3em;
+  height: 3em;
+  border-radius: 50%; 
+  background-color: $colorBg;
+  border: 3px solid $colorDisplayBorder;
+}
+
+.c-info{
+  @extend %commonFlexing;
+  flex-direction: column;
+  width: 70%;
+  overflow-x: hidden;
+  color: $uiText;
+}
+
+.c-info input{
+  width: 90%;
+  font-size: 1.2em;
+  color: $uiText;
+}
+
+.c-info p{
+  font-size: 0.7em;
+  text-indent: 0.7em;
+}
