@@ -12,7 +12,7 @@ class Color extends Component{
   render(){
     return(
       <div className={"c " + this.props.addClass}>
-        <div className="c-display-container"><div className="c-display" style={{background: this.props.val}}></div></div>
+        <div className="c-display-container"><div className="c-display" style={{background: (this.props.val) === "New" ? "url(https://raw.githubusercontent.com/DarienTsai/Koi-color-palette-builder/master/public/png/transparentBg.png)" : this.props.val}}></div></div>
         <div className="c-info">
           <input type="text" placeholder="Color"></input>
           <p className="c-val">{this.props.val}</p>
