@@ -95,11 +95,15 @@ $groupsWidth: 22%;
 }
 
 .g svg{
+  transform: scale(0.9);
+}
+
+.g svg{
   transition-duration: 0.2s;
 }
 
 #color-groups-bar svg:hover{
-  transform: rotate(20deg) scale(1.1);
+  transform: rotate(20deg) scale(1);
   cursor: pointer;
 }
 
@@ -114,11 +118,13 @@ $groupsWidth: 22%;
   position: absolute;
   transform: translate(3em, -2.6em);
   white-space: nowrap;
-  z-index: 2;
+  z-index: 3;
   transition-duration: 0s;
 }
 
 .g:hover::after{
+  position: absolute;
+  z-index: 3;
   content: attr(name);
   opacity: 1;
   transform: translate(5em, -2.6em);

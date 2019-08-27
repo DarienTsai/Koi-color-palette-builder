@@ -26,7 +26,7 @@ class App extends Component{
     super(props);
 
     let groupGen = [];
-    for(let i = 1; i < 16; i += 1){
+    for(let i = 1; i < 13; i += 1){
       groupGen.push({
         occupied: false,
         name: "Group " + i,
@@ -124,9 +124,6 @@ class App extends Component{
     groups.childNodes[9].addEventListener('click',function(e){globals.clickG(9);});
     groups.childNodes[10].addEventListener('click',function(e){globals.clickG(10);});
     groups.childNodes[11].addEventListener('click',function(e){globals.clickG(11);});
-    groups.childNodes[12].addEventListener('click',function(e){globals.clickG(12);});
-    groups.childNodes[13].addEventListener('click',function(e){globals.clickG(13);});
-    groups.childNodes[14].addEventListener('click',function(e){globals.clickG(14);});
 
     this.parse();
   }
@@ -215,10 +212,10 @@ class App extends Component{
     this.updateColorInfo(this.state.colorGroups[CG].currentColor);
 
     if(e.deltaY < 0){
-      CG = (CG - 1) < 0 ? 14: (CG - 1);
+      CG = (CG - 1) < 0 ? 11: (CG - 1);
     }
     else if(e.deltaY > 0){
-      CG = (CG + 1) % 15;
+      CG = (CG + 1) % 12;
     }
     this.updateGroupName(CG);
     this.setState({currentGroup: CG});
