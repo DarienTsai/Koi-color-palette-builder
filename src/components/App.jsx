@@ -233,6 +233,7 @@ class App extends Component{
 
   colorListener = () => {
     let colors = ReactDOM.findDOMNode(document.getElementById('colors-bar'));
+    console.log(colors.childNodes);
     for(let i = 0; i < colors.childNodes.length; i += 1){
       colors.childNodes[i].removeEventListener(
         'click',
@@ -391,6 +392,10 @@ class App extends Component{
       totalGroups -= 1;
     }
     this.setState({totalColors: totalColors, totalGroups: totalGroups, colorGroups: groups});
+    window.setTimeout(
+      () => {this.colorListener()},
+      1
+    );
   }
 
   updateColorInfo = (idx) => {
