@@ -11,7 +11,15 @@
 body{
   background-color: #1f1e1e;
   overflow-x: hidden;
-  color: rgb(182, 182, 182);
+  color: rgb(211, 211, 211);
+}
+
+h1, h3{
+  font-weight: normal;
+}
+
+img{
+  user-select: none;
 }
 
 /*nav*/
@@ -34,13 +42,13 @@ nav img{
 }
 
 nav img:hover{
-  transform: rotate(20deg);
+  transform: rotate(10deg);
 }
 
 .nav-side{
-  width: 7%;
+  width: fit-content;
   height: 100%;
-  padding: 0.8%;
+  padding: 0.8% 2%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -49,7 +57,7 @@ nav img:hover{
 
 .nav-link{
   font-size: 1.1em;
-  color: rgb(182, 182, 182);
+  color: rgb(211, 211, 211);
   padding: 0 10%;
   width: fit-content;
   height: fit-content;
@@ -61,7 +69,7 @@ nav img:hover{
 }
 
 .nav-link:hover{
-  color: rgb(236, 236, 236);
+  color: rgb(240, 240, 240);
 }
 
 /*header*/
@@ -74,18 +82,19 @@ header{
 }
 
 header div{
-  width: 50%;
   height: 100%;
   display: flex;
   justify-content: center;
 }
 
 #head-img{
+  width: 48%;
   align-items: flex-end;
   overflow-y: hidden;
 }
 
 #head-text{
+  width: 35%;
   align-items: center;
   flex-direction: column;
 }
@@ -93,15 +102,23 @@ header div{
 header img{
   display: block;
   max-width: 90%;
-  box-shadow: 0 0 60px 5px rgb(0, 0, 0);
+  box-shadow: 0 0 35px 5px rgba(0, 0, 0, 0.678);
+}
+
+@keyframes fade{
+  to{opacity: 1;}
 }
 
 header h1{
-  font-size: 15em;
+  font-size: 16em;
+  opacity: 0;
+  animation: fade 3s 0.2s 1 cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
 header p{
-  font-size: 3em;
+  font-size: 2.25em;
+  opacity: 0;
+  animation: fade 2s 0.5s 1 cubic-bezier(0.25, 0.3, 0.45, 0.94) forwards;
 }
 
 /*intro*/
@@ -119,7 +136,7 @@ header p{
 }
 
 #intro-img{
-  width: 35%;
+  width: 38%;
   height: 100%;
 }
 
@@ -133,12 +150,12 @@ header p{
 }
 
 #intro h1{
-  font-size: 9em;
-  padding: 5% 0;
+  font-size: 6.5em;
+  padding: 3% 0;
 }
 
 #intro p{
-  font-size: 2em;
+  font-size: 1.8em;
   padding: 5% 0;
 }
 
@@ -250,7 +267,7 @@ figcaption{
   background-color: #448b8f;
   display: block;
   text-decoration: none;
-  color: rgb(182, 182, 182);
+  color: rgb(211, 211, 211);
   font-size: 1.5em;
   width: fit-content;
   border-radius: 3px;
