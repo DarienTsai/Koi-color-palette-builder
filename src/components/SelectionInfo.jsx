@@ -18,7 +18,7 @@ class SelectionInfo extends Component{
       <textarea id="group-description" placeholder="Description" spellCheck="false" ></textarea>
       <div id="group-colors">
         <div id="color-count-container"><p id="group-color-count">{this.props.colorCount}</p></div>
-        <p id="color-count-label">Colors</p>
+        <p id="color-count-label">{this.props.colorCount !== 1 ? "Colors" : "Color"}</p>
       </div>
       <p id="select-separator">&#9662;&#9662;&#9662;</p>
     </div>

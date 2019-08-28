@@ -18,7 +18,7 @@
 .sidebar{
   @extend %commonFlexing;
   background-color: $sidebarBg;
-  width: 18%;
+  width: 19%;
   height: 100%;
   z-index: 5;
   flex-direction: column;
@@ -30,7 +30,7 @@
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: nowrap;
-  width: 64%;
+  width: 62%;
   height: 100%;
 }
 

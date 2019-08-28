@@ -11,7 +11,7 @@
 #header-logo{
   @extend %commonFlexing;
   align-items: center;
-  width: 25%;
+  width: 20%;
 
   object{
     width: 100%;
@@ -31,7 +31,7 @@
   @extend %commonFlexing;
   flex-direction: column;
   align-items: center;
-  width: 75%;
+  width: 80%;
   box-sizing: border-box;
   padding: 2%;
 
@@ -39,7 +39,7 @@
 
 #session{
   color: $leftHeadSessionTextColor;
-  font-size: 1.8em;
+  font-size: 1.4em;
   width: 85%;
 }
 
@@ -47,14 +47,15 @@
   @extend %commonFlexing;
   width: 80%;
   color: $leftHeadAuthorTextColor;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 #by{
   padding: 1.5% 0;
-  width: 15%;
+  width: 20%;
 }
 #author{
   color: inherit;
-  width: 85%;
+  width: 80%;
+  font-size: 1em;
 }

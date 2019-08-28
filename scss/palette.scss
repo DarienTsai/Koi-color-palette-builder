@@ -30,7 +30,7 @@ $groupsWidth: 22%;
   height: 100%;
   box-sizing: border-box;
   padding: 3% 0;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 #colors-bar{
@@ -50,7 +50,7 @@ $groupsWidth: 22%;
   width: $groupsWidth;
   background-image: url(https://raw.githubusercontent.com/DarienTsai/Koi-color-palette-builder/master/public/png/clear.png);
   background-position: center;
-  background-size: 23px 23px;
+  background-size: 18px 18px;
   background-repeat: no-repeat;
 }
 
@@ -58,7 +58,7 @@ $groupsWidth: 22%;
   width: 100% - $groupsWidth;
   background-image: url(https://raw.githubusercontent.com/DarienTsai/Koi-color-palette-builder/master/public/png/delete.png);
   background-position: center;
-  background-size: 20px 20px;
+  background-size: 15px 15px;
   background-repeat: no-repeat;
 }
 
@@ -87,7 +87,7 @@ $groupsWidth: 22%;
 
 .e svg{
   fill: $ghostGroup;
-  transform: scale(0.5);
+  transform: scale(0.35);
 }
 
 .g{
@@ -95,7 +95,7 @@ $groupsWidth: 22%;
 }
 
 .g svg{
-  transform: scale(0.9);
+  transform: scale(0.6);
 }
 
 .g svg{
@@ -103,7 +103,7 @@ $groupsWidth: 22%;
 }
 
 #color-groups-bar svg:hover{
-  transform: rotate(20deg) scale(1);
+  transform: rotate(20deg) scale(0.6);
   cursor: pointer;
 }
 
@@ -127,7 +127,7 @@ $groupsWidth: 22%;
   z-index: 3;
   content: attr(name);
   opacity: 1;
-  transform: translate(5em, -2.6em);
+  transform: translate(4em, -2.6em);
   transition-duration: 0.3s;
 }
 
@@ -145,7 +145,7 @@ $groupsWidth: 22%;
 
 .g:hover::before{
   opacity: 1;
-  transform: translate(4.7em, 1em) rotate(45deg);
+  transform: translate(3.7em, 1em) rotate(45deg);
   transition-duration: 0.1s;
 }
 
@@ -157,7 +157,7 @@ $groupsWidth: 22%;
   border-radius: 0 1em 1em 0;
   margin: 0.2em 0;
   box-sizing: border-box;
-  padding: 1em 0;
+  padding: 5% 0;
   border-right: 2px solid $colorBorder;
   transition-duration: 0.1s;
 }
@@ -169,33 +169,33 @@ $groupsWidth: 22%;
 .c-display-container{
   @extend %commonFlexing;
   align-items: center;
-  width: 30%;
+  width: 35%;
   height: 100%;
 }
 
 .c-display{
-  width: 3em;
-  height: 3em;
+  width: 2.5em;
+  height: 2.5em;
   border-radius: 50%; 
-  background-color: $colorBg;
-  border: 3px solid $colorDisplayBorder;
+  border: 2px solid $colorDisplayBorder;
+  cursor: pointer;
 }
 
 .c-info{
   @extend %commonFlexing;
   flex-direction: column;
-  width: 70%;
+  width: 65%;
   overflow-x: hidden;
   color: $uiText;
 }
 
 .c-info input{
   width: 90%;
-  font-size: 1.2em;
+  font-size: 1em;
   color: $uiText;
 }
 
 .c-info p{
-  font-size: 0.7em;
-  text-indent: 0.7em;
+  font-size: 0.6em;
+  text-indent: 0.6em;
 }

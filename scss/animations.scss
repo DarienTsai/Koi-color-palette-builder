@@ -17,8 +17,8 @@
 
 @keyframes border{
   to{
-    border-left: 3px solid $activeGroup;
-    border-right: 3px solid $activeGroup;
+    border-left: 2px solid $activeGroup;
+    border-right: 2px solid $activeGroup;
   }
 }
 
@@ -56,9 +56,9 @@
 }
 
 .a{
-  border-left: 3px solid $sidebarBg;
-  border-right: 3px solid $sidebarBg;
-  animation: border 2s cubic-bezier(0.23, 1, 0.320, 1) forwards;
+  border-left: 1px solid $sidebarBg;
+  border-right: 1px solid $sidebarBg;
+  animation: border 1s cubic-bezier(0.23, 1, 0.320, 1) forwards;
 }
 
 #remove-group{

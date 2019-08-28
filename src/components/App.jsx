@@ -228,10 +228,27 @@ class App extends Component{
     }
     this.displayNotes();
     colors.childNodes[this.state.colorGroups[this.state.currentGroup].currentColor].classList.add("active");
+    this.colorListener();
+  }
+
+  colorListener = () => {
+    let colors = ReactDOM.findDOMNode(document.getElementById('colors-bar'));
     for(let i = 0; i < colors.childNodes.length; i += 1){
+      colors.childNodes[i].removeEventListener(
+        'click',
+        (e) => {this.manualColorNav(i);}
+      );
+      colors.childNodes[i].childNodes[0].childNodes[0].removeEventListener(
+        'click',
+        (e) => {this.setCompare();}
+      );
       colors.childNodes[i].addEventListener(
         'click',
         (e) => {this.manualColorNav(i);}
+      );
+      colors.childNodes[i].childNodes[0].childNodes[0].addEventListener(
+        'click',
+        (e) => {console.log(colors); this.setCompare();}
       );
     }
   }
@@ -335,12 +352,8 @@ class App extends Component{
     regColors = ReactDOM.findDOMNode(document.getElementById('colors-bar'));
     for(let i = 0; i < regColors.childNodes.length; i += 1){
       regColors.childNodes[i].classList.remove('active');
-      regColors.childNodes[i].removeEventListener('click', (e) => {this.manualColorNav(i);});
-      regColors.childNodes[i].addEventListener(
-        'click',
-        (e) => {this.manualColorNav(i);}
-      );
     }
+    this.colorListener();
     regColors.childNodes[1].classList.add('active');
     regColors.childNodes[1].childNodes[1].childNodes[0].value = name;
   }
@@ -358,6 +371,7 @@ class App extends Component{
     this.updateColorInfo(current.currentColor);
     this.setState({colorGroups: groups});
     ReactDOM.findDOMNode(document.getElementById('colors-bar')).childNodes[current.currentColor].childNodes[1].childNodes[0].value = this.state.colorGroups[this.state.currentGroup].colors[this.state.colorGroups[this.state.currentGroup].currentColor].name;
+    this.colorListener();
   }
 
   removeColor = () => {
