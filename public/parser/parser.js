@@ -4,7 +4,6 @@
  * Date: 8/23/19
 */
 
-//#Name{/Author{/{$}Group+1{:}hello{%}One{:}yes{&}2mylo{%}Two{:}no{&}6h2ij{$}Group+2{:}hellow+world{%}Three{:}one+two+three{&}ljl0
 let data = window.location.hash.substring(1);
 if(
   data.includes("{/") &&
@@ -42,8 +41,6 @@ if(
     groups.push({name: gName, desc: gDesc, list: colors});
   }
 
-  console.log(groups);
-
   let markup =  "<button onclick=\"window.print()\" class=\"print\">Print</button>" +
                 "<div id=\"header\">" +
                 "<p class=\"title\">" + palette +"</p>" +
@@ -57,7 +54,6 @@ if(
               "<table>";
 
     let colorList = groups[i].list;
-    console.log(colorList);
     for(let j = 0; j < colorList.length; j += 1){
       markup += "<tr>" +
                 "<td>" + colorList[j].name + "</td>" +
@@ -71,7 +67,6 @@ if(
 
   markup += "<button onclick=\"window.print()\" class=\"print\">Print</button>";
 
-  console.log(markup);
   let page = document.getElementById('paging');
   page.innerHTML = markup;
 }

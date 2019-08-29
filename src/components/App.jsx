@@ -60,6 +60,7 @@ class App extends Component{
       handleColorRem: this.removeColor,
       handleGroupRem: this.removeGroup,
       link: "",
+      export: "",
       globals:{
         scrollC: this.scrollColor,
         scrollG: this.scrollGroup,
@@ -146,7 +147,7 @@ class App extends Component{
           <Information groups={this.state.totalGroups} colors={this.state.totalColors} current={this.state.colorGroups[this.state.currentGroup]}/>
           <Produce actions={this.state.final} />
         </div>
-        <Share link={this.state.link}/>
+        <Share link={this.state.link} export={this.state.export}/>
       </React.Fragment>
     )
   }
@@ -458,6 +459,7 @@ class App extends Component{
   share = () => {
     const data = "#" + this.paletteString();
     this.setState({link: 'https://darientsai.github.io/Koi-color-palette-builder/index.html' + data});
+    this.setState({export: 'https://darientsai.github.io/Koi-color-palette-builder/export.html' + data});
     ReactDOM.findDOMNode(document.getElementById('sharePalette')).className = "";
   }
 

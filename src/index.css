@@ -58,7 +58,7 @@ body {
   overflow: hidden;
 }
 
-#linkGen, #popup, #sharePalette, #produce, .overall-flair, #overall-info, #group-colors div, #group-colors, #current-selection-info, #comparator, #options div, #name-centering, #picker, .c-info, .c-display-container, .c, #color-groups-bar, #removal, #lists, #palette, #credit, #session-details, #header-logo, #left-bar-header, .sidebar, #root {
+#linkGen, #exGen, #wrap, #popup, #sharePalette, #produce, .overall-flair, #overall-info, #group-colors div, #group-colors, #current-selection-info, #comparator, #options div, #name-centering, #picker, .c-info, .c-display-container, .c, #color-groups-bar, #removal, #lists, #palette, #credit, #session-details, #header-logo, #left-bar-header, .sidebar, #root {
   display: flex;
   justify-content: space-around;
   flex-wrap: nowrap;
@@ -540,13 +540,13 @@ input:hover {
 
 .c-info input {
   width: 90%;
-  font-size: 1em;
+  font-size: 1.1em;
   color: #d4d4d4;
 }
 
 .c-info p {
-  font-size: 0.6em;
-  text-indent: 0.6em;
+  font-size: 0.7em;
+  text-indent: 0.3em;
 }
 
 /*Center*/
@@ -938,7 +938,7 @@ body {
   overflow: hidden;
 }
 
-#linkGen, #popup, #sharePalette, #root, .sidebar, #left-bar-header, #header-logo, #session-details, #credit, #palette, #lists, #removal, #color-groups-bar, .c, .c-display-container, .c-info, #picker, #name-centering, #options div, #comparator, #current-selection-info, #group-colors, #group-colors div, #overall-info, .overall-flair, #produce {
+#linkGen, #exGen, #wrap, #popup, #sharePalette, #root, .sidebar, #left-bar-header, #header-logo, #session-details, #credit, #palette, #lists, #removal, #color-groups-bar, .c, .c-display-container, .c-info, #picker, #name-centering, #options div, #comparator, #current-selection-info, #group-colors, #group-colors div, #overall-info, .overall-flair, #produce {
   display: flex;
   justify-content: space-around;
   flex-wrap: nowrap;
@@ -1187,37 +1187,55 @@ input:hover {
   border-right: 2px solid #4fbbbb;
 }
 
-#popup p {
+#popup h3 {
   font-size: 2em;
+  font-weight: normal;
   text-align: center;
   padding: 1%;
   margin: auto;
-  width: filter;
   color: #d4d4d4;
 }
 
-#linkGen {
+#popup p {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 3% 0;
+  color: #d4d4d4;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  margin: auto;
+}
+
+#wrap {
+  width: 100%;
+}
+
+#linkGen, #exGen {
+  flex-direction: column;
+  align-items: center;
   padding: 1%;
   user-select: all;
   width: 100%;
   height: fit-content;
 }
 
-#link {
-  width: 75%;
+#link, #exLink {
+  width: 90%;
+  padding: 8% 0;
   color: #d4d4d4;
 }
 
-#copyBtn {
+#copyBtn, #copyBtnEx {
   color: #d4d4d4;
   font-size: 0.8em;
   display: block;
-  width: 25%;
+  width: 60%;
   height: 100%;
-  padding: 2%;
+  padding: 3%;
 }
 
-#copyBtn:hover {
+#copyBtn:hover, #copyBtnEx:hover {
   background-color: #141414;
 }
 
