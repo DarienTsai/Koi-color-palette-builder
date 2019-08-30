@@ -234,7 +234,6 @@ class App extends Component{
 
   colorListener = () => {
     let colors = ReactDOM.findDOMNode(document.getElementById('colors-bar'));
-    console.log(colors.childNodes);
     for(let i = 0; i < colors.childNodes.length; i += 1){
       colors.childNodes[i].removeEventListener(
         'click',
@@ -242,7 +241,8 @@ class App extends Component{
       );
       colors.childNodes[i].childNodes[0].childNodes[0].removeEventListener(
         'click',
-        (e) => {this.setCompare();}
+        (e) => {window.setTimeout(()=>{this.setCompare();}, 10)},
+        true
       );
       colors.childNodes[i].addEventListener(
         'click',
@@ -250,7 +250,8 @@ class App extends Component{
       );
       colors.childNodes[i].childNodes[0].childNodes[0].addEventListener(
         'click',
-        (e) => {console.log(colors); this.setCompare();}
+        (e) => {window.setTimeout(()=>{this.setCompare();}, 10)},
+        true
       );
     }
   }
