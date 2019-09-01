@@ -169,20 +169,26 @@ header p{
   margin: auto;
 }
 
+#features h1{
+  text-align: center;
+  margin: auto;
+  font-size: 4.5em;
+}
+
 #feature-cards{
   width: 80%;
   padding: 3% 0;
   margin: auto;
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
 }
 
 figure{
-  padding: 2%;
+  padding: 2.5% 2%;
   border-radius: 3px;
-  width: 15%;
+  width: 13%;
+  height: 30vh;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -192,6 +198,7 @@ figure{
   border-top: 3px solid rgb(32, 149, 179);
   border-left: 3px solid rgb(32, 149, 179);
   border-right: 3px solid rgb(28, 86, 99);
+  background-color: black;
 }
 
 figure img{
@@ -233,12 +240,17 @@ figcaption{
 
 #action{
   width: 100%;
-  padding: 2% 0;
+  padding: 3% 0;
   display: flex;
+  flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   text-align: center;
+  background: url(../png/flair.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #action-text{
@@ -246,19 +258,8 @@ figcaption{
   height: 100%;
 }
 
-#action-img{
-  width: 35%;
-  height: 100%;
-}
-
-#action img{
-  display: block;
-  max-width: 80%;
-  float: left;
-}
-
 #action h3{
-  font-size: 5em;
+  font-size: 4.5em;
 }
 
 #action a{
