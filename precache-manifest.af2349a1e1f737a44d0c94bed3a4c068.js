@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "824639ed2d17c6ca5a7fd0c5aa5cb724",
+    "revision": "f712026217ee5bcaf8d1a890c7232bc3",
     "url": "/Koi-color-palette-builder/index.html"
   },
   {
-    "revision": "816e172aa15b2995f2b7",
+    "revision": "5605fed825a9daee8cb4",
     "url": "/Koi-color-palette-builder/static/css/main.2cd5a4b5.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Koi-color-palette-builder/static/js/2.25899fee.chunk.js"
   },
   {
-    "revision": "816e172aa15b2995f2b7",
-    "url": "/Koi-color-palette-builder/static/js/main.5d26e0dd.chunk.js"
+    "revision": "5605fed825a9daee8cb4",
+    "url": "/Koi-color-palette-builder/static/js/main.cac471b3.chunk.js"
   },
   {
     "revision": "69468c6e9f54766f6ba3",
