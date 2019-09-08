@@ -12,7 +12,7 @@ colors quickly, confidently, and feel great in the process.
 
 ---
 ### Personal Notes
-I made this app to try out ReactJS and Sass. Hope its useful!
+I made this app to try out ReactJS and Sass. Hope it's useful!
 - Also do note that this isn't mobile friendly - it was made for computers and larger screen sizes. Resizing the window will kill the layout.
 - I've decided to commit everything in my app folder since this isn't for work or anything. RIP my git history.
 
