@@ -16,7 +16,7 @@ class Options extends Component{
 
         <div id="nav">
           <button id="home-btn" onClick={() => {window.location.assign('home.html');}}>Home</button>
-          <button id="help-btn">Help</button>
+          <button id="help-btn" onClick={() => {window.location.assign('tutorial.html');}}>Help</button>
         </div>
       </div>
     )
