@@ -5,7 +5,7 @@ colors quickly, confidently, and feel great in the process.
 
 ---
 ### Features
-- Palette with up to 12 color groups
+- Palette with up to 10 color groups
 - Comparator to contrast colors
 - Share a workspace
 - Export to print-ready output
